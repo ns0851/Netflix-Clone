@@ -1,0 +1,433 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+.main {
+    background-image: url("images/bg.jpg");
+    height: 70vh;
+    position: relative;
+    background-position: center center;
+    background-attachment: fixed;
+    /* background-repeat: no-repeat; */
+    background-size: max(800px, 100vw);
+    background-size: cover;
+    width: 100%;
+}
+
+.box {
+    background-color: black;
+    position: absolute;
+    height: 70vh;
+    width: 100%;
+    top: 0;
+    opacity: 0.6;
+}
+
+nav {
+    display: flex;
+    max-width: 78.2vw;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+    position: relative;
+    top: 12px;
+}
+
+nav img {
+    color: rgb(165, 2, 2);
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 0;
+    margin: 0px 9px;
+    right: 7px;
+}
+
+
+.signin {
+    background-color: red;
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.txt {
+    height: 500px;
+    z-index: 10;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    top: 75px;
+}
+
+.mtext {
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.txt p {
+    color: rgb(240, 240, 240);
+    font-weight: 200;
+    font-size: 24px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.txt :nth-child(3) {
+    font-size: 20px;
+}
+
+.txt input,
+.en input {
+    background-color: rgba(36, 36, 36, 0.527);
+    border: 0.6px solid rgb(167, 167, 167);
+    color: white;
+    padding: 20px 100px 20px 10px;
+    width: 25vh;
+    border-radius: 3px;
+}
+
+.butto .drop {
+    color: white;
+    background-color: rgba(49, 49, 49, 0.6);
+    padding: 8px 40px;
+    border: 0.4px solid rgb(107, 107, 107);
+    font-size: 14px;
+}
+
+.ano .drop {
+    color: white;
+    background-color: rgba(49, 49, 49, 0.6);
+    padding: 8px 40px;
+    border: 0.4px solid rgb(107, 107, 107);
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.entry {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.entry button {
+    background-color: red;
+    color: white;
+    padding: 0px 20px;
+    font-family: sans-serif;
+    font-size: 25px;
+    border: 0;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+::placeholder {
+    font-size: 16px;
+    color: rgb(230, 230, 230);
+    opacity: 1;
+}
+
+.first {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin-top: 10px;
+    gap: 30px;
+    max-width: 70vw;
+    margin: auto;
+    text-align: left;
+}
+
+.first .words {
+    color: white;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+
+.words :nth-child(1) {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.first .vid img {
+    position: absolute;
+    width: 30vw
+}
+
+.first .vid video {
+    width: 30vw;
+    position: relative;
+}
+
+.second {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    max-height: 70vh;
+    margin-top: 10px;
+    gap: 30px;
+    max-width: 70vw;
+    margin: auto;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.second .words {
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-size: 25px;
+    height: 70%;
+    position: relative;
+    top: 80px;
+}
+
+.second .vid img {
+    width: 35vw
+}
+
+.third {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    max-height: 70vh;
+    margin-top: 10px;
+    gap: 30px;
+    max-width: 70vw;
+    margin: auto;
+    text-align: left;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+.third .words {
+    color: white;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+
+.words :nth-child(1) {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.third .vid img {
+    position: absolute;
+    width: 32vw
+}
+
+.third .vid video {
+    width: 32vw;
+    position: relative;
+    transform: scale(0.8);
+}
+
+.forth {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    max-height: 70;
+    gap: 30px;
+    max-width: 70vw;
+    margin: auto;
+    text-align: left;
+    position: relative;
+    top: 150px;
+    margin-bottom: 200px;
+}
+
+.forth .words {
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-size: 25px;
+    height: 70%;
+}
+
+.forth .vid img {
+    width: 40vw
+}
+
+
+.ask {
+    color: white;
+    font-family: sans-serif;
+    font-size: 45px;
+    font-weight: 900;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.last {
+    color: white;
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: 200;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.last .ques div {
+    height: 6vh;
+    width: 75vw;
+    background-color: rgb(41, 41, 41);
+    margin: auto;
+    margin-top: 15px;
+    text-align: left;
+    padding: 20px;
+}
+
+.one {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.one :nth-child(2) {
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.last .ques :hover {
+    background-color: rgb(66, 66, 66);
+}
+
+.en {
+    color: white;
+    text-align: center;
+    margin: 50px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.en .entry {
+    margin: 20px;
+}
+
+footer {
+    color: rgb(175, 175, 175);
+    font-family: sans-serif;
+    margin: 5% 5% 5% 11%;
+}
+
+footer a {
+    color: rgb(175, 175, 175);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 600px) {
+    html{
+        width: 140%;
+    }
+
+
+    .entry {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav img {
+        width: 90px;
+    }
+
+    .butto button {
+        padding: 8px 15px;
+        border-radius: 5px;
+        border: 0;
+        margin: 0px 4px;
+        font-size: 12px;
+
+    }
+    .butto .drop {
+        color: white;
+        background-color: rgba(49, 49, 49, 0.6);
+        padding: 8px 20px;
+        border: 0.4px solid rgb(107, 107, 107);
+        font-size: 12px;
+    }
+    nav{
+        max-width: 90vw;
+    }
+    .txt{
+        height: 275px;
+    }
+    .mtext{
+        font-size: 32px;
+        font-weight: 700;
+    }
+    .txt p{
+        font-size: 19px;
+        font-weight: 400;
+    }
+    .txt :nth-child(3){
+        font-size: 18px;
+        max-width: 400;
+        margin: 0px 50px;
+    }
+    .main{
+        height: 80vh;
+    }
+    .box{
+        height: 80vh;
+    }
+    .txt input, .en input {
+        background-color: rgba(36, 36, 36, 0.527);
+        border: 0.6px solid rgba(167, 167, 167, 0.205);
+        color: white;
+        padding: 15px 90px 15px 10px;
+        width: 22vh;
+        border-radius: 3px;
+    }
+    .entry button{
+        color: white;
+        padding: 9px 9px;
+        font-family: sans-serif;
+        font-size: 20px;
+    }
+}
